@@ -37,7 +37,7 @@ p{
 	padding-bottom: 1rem;
 }
 
-.masthead-avatar {
+.avatar {
     width: 20rem;
 }
 
@@ -67,8 +67,10 @@ p{
 @media screen and (max-width: 736px){
 	.body{
 		font-size: 3em;
-		margin: -150px 0 0 -325px;
 	}
+    .avatar {
+        width: 10rem;
+    }
 	p{
 		font-size: 15px;
 	}
