@@ -8,7 +8,7 @@ context = canvas.getContext('2d'),
 gradient = null,
 pixies = new Array();
 
-function setDimensions(e) {
+function setDimensions() {
 	WIDTH = window.innerWidth;
 	HEIGHT = window.innerHeight;
 	container.style.width = WIDTH+'px';
@@ -83,22 +83,3 @@ function draw() {
 	}
 }
 setInterval(draw, DRAW_INTERVAL);
-
-$(document).ready(function(){
-	var $mountains = $('#mountains');
-	var $grass = $('#grass');
-	var $container = $('#container');
-	$container.mousedown(function(ev){
-		var ox = ev.clientX;
-		var om = parseInt($mountains.css('background-position').substr(0, $mountains.css('background-position').search(' ')));
-		var og = parseInt($grass.css('background-position').substr(0, $grass.css('background-position').search(' ')));
-		$container.mousemove(function(e){
-			$mountains.css('background-position', om+((e.clientX-ox)/10)+'px 0px');
-			$grass.css('background-position', og+((e.clientX-ox)/4)+'px 10px');
-		});
-		$container.mouseup(function(){
-			$container.unbind('mousemove');
-			$container.unbind('mouseup');
-		});
-	});
-});
