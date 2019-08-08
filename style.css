@@ -1,0 +1,130 @@
+html{
+	height: 100%;
+}
+
+body{
+	height: 100%;
+	background: url(columbus.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#container {
+    overflow:hidden;
+    position:fixed;
+}
+
+.body{
+	font-size: 8rem;
+	font-family: 'Bubblegum Sans';
+	text-align: center;
+	color: white;
+	opacity: 0.9;
+    position: absolute;
+	width: 100%;
+	height: 200px;
+	z-index: 15;
+	top: 7%;
+}
+
+p{
+	font-size: 2rem;
+}
+
+.name{
+	padding-bottom: 1rem;
+}
+
+.masthead-avatar {
+    width: 20rem;
+}
+
+.footer {
+	font-size: 20px;
+	font-family: 'Bubblegum Sans';
+	color: white;
+	opacity: 0.9;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 1rem;
+	text-align: center;
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 25px;
+    font-size: 35px;
+    width: 35px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 736px){
+	.body{
+		font-size: 3em;
+		margin: -150px 0 0 -325px;
+	}
+	p{
+		font-size: 15px;
+	}
+	/* Style all font awesome icons */
+	.fa {
+		padding: 13px;
+		font-size: 25px;
+		width: 25px;
+		text-align: center;
+		text-decoration: none;
+		border-radius: 50%;
+	}
+	.footer{
+		font-size: 15px;
+	}
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Instagram */
+.fa-instagram {
+    background: #c32aa3;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+/* Github */
+.fa-github {
+    background: #6e5494;
+    color: white;
+}
+
+/* Spotify */
+.fa-spotify {
+    background: #6AE368;
+    color: white;
+}
+
+/* Linked In */
+.fa-linkedin {
+    background: #0077B5;
+    color: white;
+}
