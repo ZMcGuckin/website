@@ -1,6 +1,6 @@
 var WIDTH = window.innerWidth,
 HEIGHT = window.innerHeight,
-MAX_PARTICLES = 200,
+MAX_PARTICLES = 50,
 DRAW_INTERVAL = 60,
 container = document.querySelector('#container'),
 canvas = document.querySelector('#pixie'),
