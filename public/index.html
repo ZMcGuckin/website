@@ -9,6 +9,26 @@
 	</head>
 
 	<body>
+		<!-- Firebase Setup -->
+		<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
+
+		<script>
+		var firebaseConfig = {
+			apiKey: "AIzaSyBl8STlkqZaDCztHrz1vU21VnyLln3p6vE",
+			authDomain: "zmcguckin-website.firebaseapp.com",
+			databaseURL: "https://zmcguckin-website.firebaseio.com",
+			projectId: "zmcguckin-website",
+			storageBucket: "zmcguckin-website.appspot.com",
+			messagingSenderId: "822202433451",
+			appId: "1:822202433451:web:ddbe6c5082a1a2a5a45cee",
+			measurementId: "G-L8MVTLL7XE"
+		};
+		firebase.initializeApp(firebaseConfig);
+		firebase.analytics();
+		</script>
+
+		<!-- Website Code -->
 		<div id="container">
 			<canvas id="pixie"></canvas>
 		</div>
@@ -19,18 +39,24 @@
 			</div>
 			<p>Software Developer / Problem Solver / Buckeye</p>
 			<div class="icons">
-				<a href="http://facebook.com/zachmcguckin" target="_blank" class="fa fa-facebook"></a>
-				<a href="http://instagram.com/zmcguckin" target="_blank" class="fa fa-instagram"></a>
-				<a href="http://twitter.com/zmcguckin" target="_blank" class="fa fa-twitter"></a>
-				<a href="http://github.com/zmcguckin" target="_blank" class="fa fa-github"></a>
-				<a href="http://open.spotify.com/user/zmcguckin2" target="_blank" class="fa fa-spotify"></a>
-				<a href="http://linkedin.com/in/zmcguckin" target="_blank" class="fa fa-linkedin"></a>
+				<a href="http://facebook.com/zachmcguckin" onclick="return trackClick('facebook')" target="_blank" class="fa fa-facebook"></a>
+				<a href="http://instagram.com/zmcguckin" onclick="return trackClick('instagram')" target="_blank" class="fa fa-instagram"></a>
+				<a href="http://twitter.com/zmcguckin" onclick="return trackClick('twitter')" target="_blank" class="fa fa-twitter"></a>
+				<a href="http://github.com/zmcguckin" onclick="return trackClick('github')" target="_blank" class="fa fa-github"></a>
+				<a href="http://open.spotify.com/user/zmcguckin2" onclick="return trackClick('spotify')" target="_blank" class="fa fa-spotify"></a>
+				<a href="http://linkedin.com/in/zmcguckin" onclick="return trackClick('linkedIn')" target="_blank" class="fa fa-linkedin"></a>
 			</div>
 		</div>
 		<div class="footer">
 			Created and Designed by Zach McGuckin <script>document.write(new Date().getFullYear())</script>
 		</div>
 	</body>
+
+	<script>
+		function trackClick(site) {
+			firebase.analytics().logEvent(site +' clicked');
+		}
+	</script>
 
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
 	<script type="text/javascript" src="test.js"></script>
