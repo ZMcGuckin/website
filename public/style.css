@@ -1,9 +1,20 @@
+@font-face {
+    font-family: 'AdamDrawn';
+    src: url('adamfont-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html{
 	height: 100%;
+	max-width: 100%;
+    overflow: hidden;
 }
 
 body{
 	height: 100%;
+	max-width: 100%;
+    overflow: hidden;
 	background: url(columbus.jpg) no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -18,7 +29,7 @@ body{
 
 .body{
 	font-size: 8rem;
-	font-family: 'Lato';
+	font-family: 'AdamDrawn';
 	text-align: center;
 	color: white;
 	opacity: 0.9;
@@ -43,7 +54,7 @@ p{
 
 .footer {
 	font-size: 20px;
-	font-family: 'Lato';
+	font-family: 'AdamDrawn';
 	color: white;
 	opacity: 0.9;
 	position: absolute;
